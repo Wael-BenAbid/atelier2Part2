@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Élément de menu "Recherche" -->
+    <item
+        android:id="@+id/menu_search"
+        android:title="menu_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom|withText" />
+
+    <!-- Élément de menu "Quitter" -->
+    <item
+        android:id="@+id/menu_exit"
+        android:title="menu_exit"
+        android:icon="@drawable/ic_exit"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/menu_couleur"
+        android:title="Couleur"
+        android:checkable="false"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/menu_rouge"
+                android:title="Green"
+                android:checkable="true" />
+            <item
+                android:id="@+id/menu_bleu"
+                android:title="Bleu"
+                android:checkable="true" />
+        </menu>
+    </item>
+</menu>
